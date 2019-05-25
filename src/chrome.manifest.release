@@ -1,0 +1,5 @@
+content	tb-upgrade	jar:chrome/tb-upgrade.jar!/content/
+skin	tb-upgrade	classic/1.0	jar:chrome/tb-upgrade.jar!/skin/
+resource		tb-upgrade	./
+
+overlay			chrome://messenger/content/messenger.xul	chrome://tb-upgrade/content/tbMessengerOverlay.xul

@@ -1,0 +1,6 @@
+content	tb-upgrade	chrome/content
+skin	tb-upgrade	chrome/skin
+skin	tb-upgrade	classic/1.0	chrome/skin
+resource		tb-upgrade	./
+
+overlay			chrome://messenger/content/messenger.xul	chrome://tb-upgrade/content/tbMessengerOverlay.xul
