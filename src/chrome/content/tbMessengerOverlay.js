@@ -38,7 +38,7 @@ window.aecreations.tbUpgrade = {
 
   init: function ()
   {
-    this._log("tb-upgrade: Initializing version 1.0 of the Thunderbird upgrade test.  Hello World!");
+    this._log("tb-upgrade: Hello World!");
   },
 
   // Helper
