@@ -1,9 +1,9 @@
 # Makefile
 
-VER = 1.0
+VER = 2.0
 DIST_FILE = tb-upgrade-test-$(VER).xpi
-MANIFEST = install.rdf
-#MANIFEST = manifest.json
+#MANIFEST = install.rdf
+MANIFEST = manifest.json
 CHROME = ./chrome
 EXCLUDE = \*~ \*.bak
 
