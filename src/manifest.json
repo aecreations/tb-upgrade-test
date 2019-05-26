@@ -9,12 +9,13 @@
   "applications": {
     "gecko": {
       "id": "tb-upgrade-test@aecreations.github.io",
-      "strict_min_version": "67.0b1"
+      "strict_min_version": "67.0b1",
+      "update_url": "https://aecreations.github.io/updates/update-test.json"
     }
   },
   
   "icons": {
-    "32": "chrome/skin/images/icon.png"
+    "32": "chrome/skin/icon.png"
   },
 
   "legacy": true
