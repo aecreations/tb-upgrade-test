@@ -1,12 +1,15 @@
 # Makefile
 
-DIST_FILE = tb-upgrade-test.xpi
+VER = 1.0
+DIST_FILE = tb-upgrade-test-$(VER).xpi
+MANIFEST = install.rdf
+#MANIFEST = manifest.json
 CHROME = ./chrome
 EXCLUDE = \*~ \*.bak
 
-$(DIST_FILE): $(CHROME)/tb-upgrade.jar install.rdf
+$(DIST_FILE): $(CHROME)/tb-upgrade.jar $(MANIFEST)
 	[ ! -f chrome.manifest.devel ] && mv -v chrome.manifest chrome.manifest.devel && cp -v chrome.manifest.release chrome.manifest
-	zip $(DIST_FILE) $(CHROME)/tb-upgrade.jar install.rdf chrome.manifest
+	zip $(DIST_FILE) $(CHROME)/tb-upgrade.jar $(MANIFEST) chrome.manifest
 
 $(CHROME)/tb-upgrade.jar:
 	cd $(CHROME); zip -r tb-upgrade.jar * -x $(EXCLUDE)
